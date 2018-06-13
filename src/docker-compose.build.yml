@@ -1,0 +1,16 @@
+version: '3.3'
+
+services:
+
+  sankey-api:
+    build:
+      context: ./Services/Sankey.API/
+      dockerfile: ./Dockerfile
+  sankey-web:  
+    build:
+      context: ./Web/Sankey.Web/
+      dockerfile: ./Dockerfile   
+  sankey-nginx:
+    build:
+      context: ./Web/Sankey.Nginx/
+      dockerfile: ./Dockerfile   
